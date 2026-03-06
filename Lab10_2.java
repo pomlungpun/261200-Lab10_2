@@ -1,4 +1,4 @@
-// Main class - tests the Adapter pattern
+
 public class Lab10_2 {
 
     public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class Lab10_2 {
         // Adapt Xpay to PayD using the adapter
         PayD payD = new XpayToPayDAdapter(xpay);
 
-        // Print adapted PayD values
+        // Print values from the adapted PayD interface
         System.out.println("Credit Card Number: " + payD.getCreditCardNo());
         System.out.println("Card Owner Name: " + payD.getCardOwnerName());
         System.out.println("Card Expiry Date: " + payD.getCardExpMonthYear());
